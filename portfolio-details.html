@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Projelerim - Esra Koyuncu</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-card .badge-wrapper {
+            margin-bottom: 14px;
+        }
+        
+        .project-card .project-title {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+        
+        .project-card .project-desc {
+            font-size: 0.95rem;
+            color: #5a5a5a;
+            margin-bottom: 12px;
+        }
+        
+        .project-card details.project-more {
+            margin-bottom: 16px;
+        }
+        
+        .project-card details.project-more summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--accent-color, #0d6efd);
+            list-style: none;
+            margin-bottom: 8px;
+        }
+        
+        .project-card details.project-more summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .project-card details.project-more summary::after {
+            content: " +";
+        }
+        
+        .project-card details.project-more[open] summary::after {
+            content: " -";
+        }
+        
+        .project-card details.project-more p {
+            font-size: 0.88rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .project-card .project-features h4 {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        
+        .project-card .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+        
+        .project-card .feature-list li {
+            font-size: 0.88rem;
+            margin-bottom: 4px;
+        }
+        
+        .project-card .feature-list i {
+            color: #2fb677;
+            margin-right: 6px;
+        }
+    </style>
+
+    <!-- =======================================================
+  * Template Name: Style
+  * Template URL: https://bootstrapmade.com/style-bootstrap-portfolio-template/
+  * Updated: Jul 02 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.webp" alt=""> -->
+                <!-- Uncomment the line below if you also wish to use an text logo -->
+                <!-- <h1 class="sitename">Style</h1>  -->
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+
+                <div class="profile-img">
+                    <img src="assets/img/profile/profile-esra.png" alt="" class="img-fluid rounded-circle">
+                </div>
+
+                <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.webp" alt=""> -->
+                    <h1 class="sitename">Esra Koyuncu</h1>
+                </a>
+
+                <div class="social-links text-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+                <ul>
+                    <li><a href="#hero">Anasayfa</a></li>
+                    <li><a href="#about">Hakkımda</a></li>
+                    <li><a href="#resume">Özgeçmiş</a></li>
+                    <li><a href="#portfolio">Portföy</a></li>
+                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title light-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Projelerim</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">Projelerim</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- Portfolio Grid Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <!-- 1. Sanatçı Biyografisi Benzerlik Analizi -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-diagram-3"></i> Doğal Dil İşleme (NLP)</span>
+                            </div>
+                            <h3 class="project-title">Sanatçı Biyografisi Benzerlik Analizi</h3>
+                            <p class="project-desc">Bu proje, sanatçı biyografileri arasındaki anlamsal benzerlikleri NLP teknikleri kullanarak analiz etmektedir. Kamuya açık kaynaklardan elde edilen biyografi metinleri işlenerek benzer sanatsal geçmişe sahip sanatçılar tespit
+                                edilmektedir.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Biyografi metinleri toplanmış, temizlenmiş, köklerine ayrıştırılmış (lemmatization) ve TF-IDF yöntemiyle sayısal vektörlere dönüştürülmüştür. Ardından Cosine Similarity algoritmasıyla
+                                    içerik bakımından en yakın sanatçılar önerilmektedir.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Düzensiz formatlar, tekrar eden bilgiler ve dilsel farklılıklar benzerlik hesaplamalarını olumsuz etkiliyordu. Ayrıca sorgulanan sanatçının kendisini en yüksek sonuç olarak göstermesini
+                                    engellemek önemli bir problemdi.</p>
+                                <p><strong>Çözüm:</strong> Metin temizleme, durak kelime kaldırma ve lemmatization içeren kapsamlı bir NLP ön işleme süreci geliştirildi; ek filtrelemeyle öneri doğruluğu artırıldı.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Biyografi metni ön işleme</li>
+                                    <li><i class="bi bi-check2-circle"></i> Türkçe NLP altyapısı</li>
+                                    <li><i class="bi bi-check2-circle"></i> TF-IDF vektörleştirme</li>
+                                    <li><i class="bi bi-check2-circle"></i> Cosine Similarity analizi</li>
+                                    <li><i class="bi bi-check2-circle"></i> Sanatçı öneri sistemi</li>
+                                    <li><i class="bi bi-check2-circle"></i> Wikipedia & DBpedia entegrasyonu</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>NLTK</span>
+                                <span>Scikit-learn</span>
+                                <span>NumPy</span>
+                                <span>Wikipedia API</span>
+                                <span>DBpedia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. SınavNet -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-window"></i> Web Uygulaması</span>
+                            </div>
+                            <h3 class="project-title">SınavNet</h3>
+                            <p class="project-desc">SınavNet, sınav süreçlerinin planlanmasını, yönetilmesini ve takip edilmesini kolaylaştırmak amacıyla geliştirilen web tabanlı bir sınav yönetim sistemidir. Öğrenciler ve yöneticiler için verimli ve merkezi bir kullanım sunar.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Sistem; sınavlar, öğrenciler ve sınav takvimlerinin tek bir merkezden yönetilmesini sağlar. Kullanılabilirlik ve erişilebilirlik ön planda tutularak süreçlerin dijital ortamda daha düzenli
+                                    yürütülmesi hedeflenmiştir.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Sınav planlamalarının manuel yürütülmesi veri tutarsızlığına, kayıt tekrarlarına ve zaman kaybına neden olmaktaydı.</p>
+                                <p><strong>Çözüm:</strong> Merkezi veritabanı yapısı ve kullanıcı dostu arayüz sayesinde sınav yönetimi otomatik hale getirilmiş, veri bütünlüğü ve erişilebilirlik artırılmıştır.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Öğrenci yönetimi</li>
+                                    <li><i class="bi bi-check2-circle"></i> Sınav planlama</li>
+                                    <li><i class="bi bi-check2-circle"></i> Veritabanı entegrasyonu</li>
+                                    <li><i class="bi bi-check2-circle"></i> Kullanıcı doğrulama</li>
+                                    <li><i class="bi bi-check2-circle"></i> Duyarlı (Responsive) arayüz</li>
+                                    <li><i class="bi bi-check2-circle"></i> Yönetici paneli</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>SQL Server</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. MHRS Yenilik Projesi -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-search"></i> UX Araştırması</span>
+                            </div>
+                            <h3 class="project-title">MHRS Yeniden Tasarım Projesi</h3>
+                            <p class="project-desc">Merkezi Hekim Randevu Sistemi'nin (MHRS) kullanıcı deneyimini geliştirmek amacıyla yenilikçi tasarım çözümleri sunan bir proje. Temel hedef, kullanılabilirliği ve erişilebilirliği artırmaktır.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Mevcut MHRS sistemindeki kullanılabilirlik problemleri analiz edilmiş, farklı yaş gruplarındaki kullanıcıların daha kolay randevu oluşturabilmesi için yeni arayüz önerileri geliştirilmiştir.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Mevcut arayüzdeki karmaşık gezinme yapısı ve gereksiz işlem adımları kullanıcıların randevu süreçlerini zorlaştırmaktaydı.</p>
+                                <p><strong>Çözüm:</strong> Kullanıcı akışı yeniden tasarlanmış, sade ve anlaşılır bir arayüz önerisi geliştirilerek mevcut sisteme alışkanlık bozulmadan daha verimli bir deneyim sunulmuştur.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> UX analizi</li>
+                                    <li><i class="bi bi-check2-circle"></i> Kullanıcı odaklı tasarım</li>
+                                    <li><i class="bi bi-check2-circle"></i> Arayüz yeniden tasarımı</li>
+                                    <li><i class="bi bi-check2-circle"></i> Erişilebilirlik iyileştirmeleri</li>
+                                    <li><i class="bi bi-check2-circle"></i> Randevu akışı optimizasyonu</li>
+                                    <li><i class="bi bi-check2-circle"></i> Wireframe geliştirme</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>UX Research</span>
+                                <span>Wireframing</span>
+                                <span>Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Karar-Sız -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-phone"></i> Mobil Uygulama Konsepti</span>
+                            </div>
+                            <h3 class="project-title">Karar-Sız</h3>
+                            <p class="project-desc">Karar-Sız, kullanıcıların günlük hayatta yaşadığı kararsızlıkları azaltmak amacıyla geliştirilen, öneri mekanizmalarıyla desteklenen bir mobil uygulama konseptidir.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Uygulama, kullanıcıların günlük kararlarını daha kolay verebilmesi için basit öneri sistemleri ve etkileşimli karar araçları sunmayı amaçlamaktadır.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Günlük yaşamda verilen küçük kararlar bile zaman kaybına ve kararsızlığa neden olabilmektedir.</p>
+                                <p><strong>Çözüm:</strong> Basit öneri algoritmaları ve kullanıcı dostu arayüz sayesinde hızlı, eğlenceli ve pratik bir karar verme deneyimi sunulmuştur.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Karar destek sistemi</li>
+                                    <li><i class="bi bi-check2-circle"></i> Etkileşimli öneriler</li>
+                                    <li><i class="bi bi-check2-circle"></i> Basit kullanıcı deneyimi</li>
+                                    <li><i class="bi bi-check2-circle"></i> Mobil öncelikli tasarım</li>
+                                    <li><i class="bi bi-check2-circle"></i> Kişiselleştirilmiş etkileşim</li>
+                                    <li><i class="bi bi-check2-circle"></i> Temiz arayüz</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>UX Design</span>
+                                <span>Prototype</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Kültürel & Geleneksel Desenler -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-flower1"></i> Nakış Tasarımı</span>
+                            </div>
+                            <h3 class="project-title">Kültürel ve Geleneksel Nakış Desenleri</h3>
+                            <p class="project-desc">Geleneksel motiflerden ve kültürel mirastan ilham alınarak hazırlanan, modern dijital nakış teknikleriyle üretime uygun hale getirilen desen koleksiyonudur.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Her desen, kültürel kimliği korunarak dijital ortama aktarılmıştır. Geleneksel estetik anlayışı ile modern nakış teknikleri bir araya getirilmiştir.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Tarihî motiflerin özgün yapısını bozmadan makine nakışına uygun hale getirmek hassas dijitalleştirme ve dikiş optimizasyonu gerektirmiştir.</p>
+                                <p><strong>Çözüm:</strong> Tüm desenler optimize edilmiş dikiş yolları ve dengeli yoğunluklarla üretime hazır nakış dosyalarına dönüştürülmüştür.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Kültürel motifler</li>
+                                    <li><i class="bi bi-check2-circle"></i> Nakış dijitalleştirme</li>
+                                    <li><i class="bi bi-check2-circle"></i> Üretime hazır dosyalar</li>
+                                    <li><i class="bi bi-check2-circle"></i> Dikiş optimizasyonu</li>
+                                    <li><i class="bi bi-check2-circle"></i> Geleneksel estetik</li>
+                                    <li><i class="bi bi-check2-circle"></i> Dijital tasarım</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Accurate</span>
+                                <span>DST Formatı</span>
+                                <span>Nakış Dijitalleştirme</span>
+                                <span>Vektörel Tasarım</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Kişiye Özel Tasarımlar -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-brush"></i> Özel Tasarım</span>
+                            </div>
+                            <h3 class="project-title">Kişiye Özel Nakış Tasarımları</h3>
+                            <p class="project-desc">Müşteri taleplerine göre hazırlanan, kişisel fikirleri üretime hazır nakış çalışmalarına dönüştüren özel tasarım koleksiyonudur.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Her çalışma, müşteriyle birlikte yürütülen tasarım süreci sonucunda hazırlanmış; kişisel tercihlerin ve görsel kimliğin doğru şekilde yansıtılması hedeflenmiştir.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Her müşterinin farklı beklentilere sahip olması, tasarım ve dijitalleştirme sürecinde yüksek esneklik ve hassasiyet gerektirmiştir.</p>
+                                <p><strong>Çözüm:</strong> Tasarımlar, görsel kalite korunarak makine nakışına uygun şekilde optimize edilmiş ve üretime hazır hale getirilmiştir.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Kişiye özel tasarım</li>
+                                    <li><i class="bi bi-check2-circle"></i> Logo uyarlama</li>
+                                    <li><i class="bi bi-check2-circle"></i> Üretim optimizasyonu</li>
+                                    <li><i class="bi bi-check2-circle"></i> Müşteri odaklı çalışma</li>
+                                    <li><i class="bi bi-check2-circle"></i> Makine nakışı</li>
+                                    <li><i class="bi bi-check2-circle"></i> Özel dijitalleştirme</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Accurate</span>
+                                <span>DST</span>
+                                <span>Vektörel Grafik</span>
+                                <span>Nakış Tasarımı</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Logo & Amblem Tasarımları -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-vector-pen"></i> Kurumsal Kimlik</span>
+                            </div>
+                            <h3 class="project-title">Logo ve Amblem Tasarımları</h3>
+                            <p class="project-desc">Kurumsal firmalar ve bireysel müşteriler için geliştirilen, nakış uygulamalarına uygun logo ve amblem tasarımlarından oluşan koleksiyon.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Tasarımlar, hem dijital hem de fiziksel kullanımda marka kimliğini koruyacak şekilde hazırlanmış ve nakış tekniklerine uygun hale getirilmiştir.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Detaylı logoların marka kimliğini kaybetmeden nakış için sadeleştirilmesi önemli bir tasarım süreci gerektirmiştir.</p>
+                                <p><strong>Çözüm:</strong> Logolar yeniden düzenlenmiş, dijitalleştirilmiş ve yüksek kaliteyle nakış üretimine uygun hale getirilmiştir.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Kurumsal kimlik tasarımı</li>
+                                    <li><i class="bi bi-check2-circle"></i> Logo dijitalleştirme</li>
+                                    <li><i class="bi bi-check2-circle"></i> Nakış optimizasyonu</li>
+                                    <li><i class="bi bi-check2-circle"></i> Vektörel çizimler</li>
+                                    <li><i class="bi bi-check2-circle"></i> Özel amblem tasarımı</li>
+                                    <li><i class="bi bi-check2-circle"></i> Üretime hazır dosyalar</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Adobe Illustrator</span>
+                                <span>Accurate</span>
+                                <span>DST</span>
+                                <span>Vektörel Grafik</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Dekoratif & Sanatsal Desenler -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-card">
+                            <div class="badge-wrapper">
+                                <span class="project-badge"><i class="bi bi-palette2"></i> Yaratıcı Tasarım</span>
+                            </div>
+                            <h3 class="project-title">Dekoratif ve Sanatsal Nakış Desenleri</h3>
+                            <p class="project-desc">Moda, aksesuar ve tekstil ürünlerinde kullanılmak üzere hazırlanan özgün dekoratif nakış desenlerinden oluşan tasarım koleksiyonu.</p>
+                            <details class="project-more">
+                                <summary>Detayları gör</summary>
+                                <p><strong>Proje Genel Bakış:</strong> Desenlerde özgünlük, kompozisyon ve estetik bütünlük ön planda tutulurken aynı zamanda endüstriyel nakış üretimine uygun teknik altyapı korunmuştur.</p>
+                                <p><strong>Karşılaşılan Zorluklar:</strong> Görsel açıdan zengin tasarımlar oluştururken nakış makinesinin teknik sınırlarını aşmamak için dikiş yoğunluğu ve detay seviyeleri dikkatle planlanmıştır.</p>
+                                <p><strong>Çözüm:</strong> Her desen, sanatsal estetik ile üretim verimliliğini dengeli şekilde bir araya getirecek biçimde optimize edilmiştir.</p>
+                            </details>
+                            <div class="project-features">
+                                <h4><i class="bi bi-stars"></i> Öne Çıkan Özellikler</h4>
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check2-circle"></i> Özgün illüstrasyonlar</li>
+                                    <li><i class="bi bi-check2-circle"></i> Dekoratif desenler</li>
+                                    <li><i class="bi bi-check2-circle"></i> Moda odaklı nakış</li>
+                                    <li><i class="bi bi-check2-circle"></i> Sanatsal kompozisyon</li>
+                                    <li><i class="bi bi-check2-circle"></i> Makine optimizasyonu</li>
+                                    <li><i class="bi bi-check2-circle"></i> Ticari üretime uygun tasarım</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-badges">
+                                <span>Accurate</span>
+                                <span>DST Formatı</span>
+                                <span>Nakış Dijitalleştirme</span>
+                                <span>Vektörel Çizim</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Portfolio Grid Section -->
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container">
+            <div class="copyright text-center ">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
